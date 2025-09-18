@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PI-lot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="static/pi-lot.css"
+           rel="stylesheet"     
+          type="text/css">
+</head>
+<body>
+    <header>
+        <a href="/index"><h1>PI-lot Message Tracker</h1></a>
+    </header>
+    <nav id="myLinks">
+        <a href="/index">Home</a>
+        <a href="/message">Received Messages</a>
+        <a href="/sendMessage">Send a message</a>
+        <a href="/sentMessagesChart">Sent Messages</a>
+    </nav>
+    <h2>Sent Messages</h2>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Timestamp</th>
+                    <th>Message</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in data %}
+                  <tr>
+                      <td>{{item[0]}}</td>
+                      <td>{{item[1]}}</td>
+                      <td>{{item[2]}}</td>
+                      <td>{{item[3]}}</td>
+                      <td>{{item[4]}}</td>
+                  </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>

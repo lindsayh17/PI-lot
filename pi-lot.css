@@ -1,0 +1,201 @@
+*{
+    padding: 0em;
+    margin: 0em;
+    font-size: 1em;
+}
+:root{
+    --main-text-color: rgb(14, 17, 22);
+    --main-bg-color: rgb(126, 163, 204);
+    --link-color: rgb(56, 29, 42);
+    --alternate-text-color: rgb(125, 116, 97);
+    --alternate-bg-color: rgb(232, 221, 181);
+}
+body{
+    margin: 0em;
+    padding: 0em;
+    background-color: var(--main-bg-color);
+    display: grid;
+    grid-template-areas:
+        "header nav"
+        "heading heading"
+        "mainContent mainContent";
+    grid-template-columns: 70% 30%;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+}
+main{
+    grid-area: mainContent;
+    color: var(--main-text-color);
+    font-family: "Garamond";
+    margin: 0% auto;
+}
+h2{
+    grid-area: heading;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+input[type=submit]{
+    padding: 0.2em;
+    background-color: var(--alternate-bg-color);
+    border: inset var(--alternate-text-color);
+    color: var(--main-text-color);
+}
+header h1{
+    font-size: 2.0em;
+    padding: 0.5em;
+    color: var(--alternate-text-color);
+    text-align: left;
+    background-color: var(--alternate-bg-color);
+    font-family: Georgia, serif;
+}
+table{
+    padding: 1em;
+}
+td{
+    padding: 0.5em;
+}
+.form{
+    margin: 0% 20%;
+}
+textarea{
+    padding: 0.5em;
+}
+.replied section{
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: var(--alternate-bg-color);
+}
+.index{
+    margin: 0% 5%;
+    display: grid;
+    grid-template-areas:
+        "intro intro"
+        "guide parts";
+    grid-template-columns: 50% 50%;
+}
+.intro{
+    text-align: center;
+    grid-area: intro;
+    margin: 2% auto;
+}
+.guide{
+    grid-area: guide;
+    margin: 0% 2%;
+}
+li{
+    position: relative;
+    left: 1em;
+    padding: .4em;
+}
+ol{
+    padding: 0.3em;
+}
+.parts{
+    grid-area: parts;
+}
+h3, h4, h5{
+    padding: 0.2em;
+}
+
+#myLinks{
+    text-align: center;
+    float: right;
+}
+header h2{
+    text-align: right;
+    color: rgb(45, 46, 46);
+    font-style: italic;
+    padding-right: 0.9em;
+    margin-left: 0.01em;
+    padding-bottom: 0.5em;
+}
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--alternate-text-color);
+}
+h1{
+    text-transform: uppercase; 
+    font-size: 1.5em;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+p{
+    text-indent: 1.25em;
+    text-align: left;
+    line-height: 1.2em;
+    max-width: 80ch;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav a{
+    color: var(--alternate-text-color);
+    margin: 0.2em;
+}
+nav{
+    background-color: var(--alternate-bg-color);
+    border-color: transparent;
+    text-align: center;
+}
+.form p:not(footer p){
+    text-indent: 0em;
+}
+
+/*Form*/
+form main h1{
+    padding-top: 0.5em;
+}
+
+footer{
+    background: var(--alternate-bg-color);
+    color: var(--alternate-text-color);
+    position: relative;
+    display: block;
+    bottom: 0em;
+    width: 100%;
+    padding: 0.4em 0em;
+}
+label[for^=txt]{
+    display: block;
+}
+form{
+    background-color: var(--main-text-color);
+    padding: 0.5em 2em 2em 2em;
+    margin: 1% 20%;
+    color: var(--alternate-text-color);
+}
+fieldset{
+    padding: 1.5%;
+    border-color: var(--alternate-bg-color);
+}
+label{
+    padding: 0.5em;
+}
+form p{
+    padding: 0.5em;
+}
+#submit{
+    padding-bottom: 0em;
+}
+footer a:hover{
+    color:var(--link-color);
+}
+
+#myLinks{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-content: center;
+    text-align: center;
+    float: right;
+}

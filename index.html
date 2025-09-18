@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PI-lot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="static/pi-lot.css"
+           rel="stylesheet"     
+          type="text/css">
+</head>
+<body>
+    <header>
+        <a href="/index"><h1>PI-lot Message Tracker</h1></a>
+    </header>
+    <nav id="myLinks">
+        <a href="/index">Home</a>
+        <a href="/message">Received Messages</a>
+        <a href="/sendMessage">Send a message</a>
+        <a href="/sentMessagesChart">Sent Messages</a>
+    </nav>
+    <h2>Your PI-Lot and You</h2>
+    <main class="index">
+        <section class="intro">
+            <p>The Pi-lot is a small communication device designed for messages between a central computer 
+                and a remote raspberry pi-based device (the PI-lot). The raspberry-pi runs a flask app that is then 
+                accessed by the central computer, and stores all messages sent out or recieved in a database.
+                Messages from the central computer are sent via the flask app, at which the point the PI-lot 
+                is prompted for a response.</p>
+            <p>To properly use the Pi-lot, it will need to be attached to a computer or monitor of some sort 
+                so that the flask app can be run via the command line. </p>
+        </section>
+        <section class="guide">
+            <h3>PI-lot User Guide: </h3>
+            <ol>
+                <li>Run the flask app using your PI-lot</li>
+                <li>Open the send message page to send a message via the central computer</li>
+                <li>View the messgage on your PI-lot
+                    <ul>
+                        <li>Right button: Scroll right</li>
+                        <li>Left button: Scroll left</li>
+                        <li>Down: Clear the message from display</li>
+                        <li>Select: Play message out loud</li>
+                    </ul>
+                </li>
+                <li>Choose whether or not to reply to the message</li>
+                <li>If you choose to reply, type your message the press the down button to review and send.</li>
+                <li>Pay attention to the notification received on the flask app. It will tell you
+                    whether you have a new message (in the received messages page). Do not send 
+                    another message until your first message is received.
+                </li>
+            </ol>
+        </section>
+        <section class="parts">
+            <h3>Parts Overview</h3>
+
+            <h4>Keyboard</h4>
+            <p>Craft your message using the buttons on the keyboard, and press the enter button to send it</p>
+
+            <h4>Audio</h4>
+            <p>Plug headphones or a speaker into the audio jack to hear your message read aloud to you. This works
+                for recently received messages as well as your reply, and is especially useful for longer messages.
+            </p>
+
+            <h4>Buttons</h4>
+            <h5>Right/Left:</h5>
+            <p>The left and right directional buttons scroll the message across the screen, which is particularly useful when messages
+            exceed the 16 character limit of the screen. Longer messages are more difficult to view, as more scrolling is required. 
+            Pi-lot prioritizes concise, and to the point messages above all else.</p>
+
+            <h5>Down:</h5>
+            <p>The down directional button allows the user to clear the display from any old messages. 
+            This function allows for messages to remain private. Once you are done reading your message, clear the display to ensure
+            the next messages are able to be shown.</p>
+
+            <h5>Select:</h5>
+            <p>When headphones or a speaker are connected to the audio jack included in the PI-lot, the user will be able to hear the messages
+                when they are received. In order to access this feature, all you have to do is press the Select button present on the Pi-lot. 
+                The Select button is located to the immediate left of the directional buttons, and will read messages aloud to the user when
+                pressed.</p>
+        </section>
+    </main>
+
+</body>
+</html>

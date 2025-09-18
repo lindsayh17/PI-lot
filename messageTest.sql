@@ -1,0 +1,1 @@
+INSERT INTO message_data (timestamp, fldMessage, fldSource, fldDestination) VALUES ('2024-04-16 17:30:17.171717', 'Hi Hannah', 'Lindsay', 'Hannahhhhhh');
