@@ -1,6 +1,7 @@
 # PI-lot
 ### A Raspberry Pi Based Hand-Held Communication Device--
 Created By: Lindsay Hall and Hannah Deyst
+
 March - May 2024
 
 The PI-lot is a Raspberry Pi based messenger with the ability to receive and reply to messages
