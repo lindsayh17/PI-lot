@@ -1,6 +1,7 @@
 # PI-lot
 ### A Raspberry Pi Based Hand-Held Communication Device--
 Created By: Lindsay Hall and Hannah Deyst
+March - May 2024
 
 The PI-lot is a Raspberry Pi based messenger with the ability to receive and reply to messages
 through a flask application. This flask app is run on the PI-lot and accessed by a control computer that will be sending out the messages. Apart from written communications, key features include: a database to track and display messages previously sent to or received from the PI-lot, audio functionality for written and received messages, and a comprehensive user-guide. Physical components consist of a Raspberry Pi with a built-in audio jack, an external LCD display with five buttons, and a bluetooth keyboard.
