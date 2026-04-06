@@ -1,5 +1,5 @@
 # PI-lot
-### A Raspberry Pi Based Hand-Held Communication Device--
+### A Raspberry Pi Based Hand-Held Communication Device
 Created By: Lindsay Hall and Hannah Deyst
 
 March - May 2024
